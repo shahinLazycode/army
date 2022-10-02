@@ -1,0 +1,414 @@
+
+<MyLayout>
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width,root.height
+
+        GridLayout:
+            cols:5
+            rows:7
+            size_hint_y:None
+            height:300
+            spacing:2
+            
+            
+            
+
+            Label:
+                id:shena_score
+                text:""
+                size_hint:(1,0.4)
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:shena
+            Label:
+                
+                text:"shena"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:sen
+            Label:
+                
+                text:"sen"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            
+            Label:
+                id:barfix_score
+                text:""
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:barfix
+            Label:
+                
+                text:"barfix"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:ghad
+            Label:
+                
+                text:"ghad"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:derazneshast_score
+                text:""
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:derazneshast
+            Label:
+                
+                text:"derazneshast"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:vazn
+            Label:
+                
+                text:"vazn"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:enetaf_score
+                text:""
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:enetaf
+            Label:
+                
+                text:"enetaf"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:dor_basan
+            Label:
+                
+                text:"dor basan"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:4*9_score
+                text:""
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:4*9
+            Label:
+                
+                text:"4*9"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:dor_kamar
+            Label:
+                
+                text:"dor kamar"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:60_metr_score
+                text:""
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:60_metr
+            Label:
+                
+                text:"60 metr"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:nomre_faaliat_varzeshi
+            Label:
+                
+                text:"nomre faaliat varzesh"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+        GridLayout:
+            cols:3
+            size_hint:(0.6,0.4)
+            spacing:2
+            Label:
+                id:3200_metr_score
+                text:""
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            TextInput:
+                id:3200_metr
+            Label:
+                text:"3200"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+
+                
+
+                
+
+            
+
+        GridLayout:
+            cols:2
+            rows:1
+            padding:20
+            spacing:20
+            Button:
+                text:"submit"
+                background_normal:''
+                background_color:(0,1,0,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+                size_hint_y:None
+                height:80
+                on_press:root.press()
+
+            Button:
+                text:"empty"
+                background_normal:''
+                background_color:(1,0,0,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+                size_hint_y:None
+                height:80   
+                
+                
+
+
+        GridLayout:
+            cols:10
+            spacing:2
+            size_hint:(1,0.4)
+            Label:
+                id:14_score
+                text:""
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:14
+                text:"14"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:10_score
+                text:""
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:10
+                text:"10"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:100_score
+                text:""
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:100
+                text:"100"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:bmi_score
+                text:""
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:bmi
+                text:"bmi"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:tanasob_score
+                text:""
+                background_color:(255/255,255/255,0/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+            Label:
+                id:tanasob
+                text:"tanasob"
+                background_color:(0,0,1,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+
+
+            
+       
+      
+        
+                
+               
+
+           
+            
+            
+
+           
+            
+                
+                
+
+    
+                
+            
