@@ -17,26 +17,32 @@ class Score:
         return None
 
     def find_score_with_record(self, title:str) -> int:
-        with open(f'{title}.csv', 'r') as csvfile:
-            reader = csv.DictReader(csvfile)
-            for index, row in enumerate(reader):
-                if index == 0:
-                    record_title = self.find_age_title(row)
-                if index == 0 and int(row[record_title]) <= self.record:
-                    return int(row['score'])
-                elif int(row[record_title]) == self.record:
-                    return int(row['score'])
+        if self.record == 0:
+            with open(f'{title}.csv', 'r') as csvfile:
+                reader = csv.DictReader(csvfile)
+                for index, row in enumerate(reader):
+                    if index == 0:
+                        record_title = self.find_age_title(row)
+                    if index == 0 and int(row[record_title]) <= self.record:
+                        return int(row['score'])
+                    elif int(row[record_title]) == self.record:
+                        return int(row['score'])
+        else:
+            return 0
     
     def find_score_with_record_time(self, title:str) -> float:
-        with open(f'{title}.csv', 'r') as csvfile:
-            reader = csv.DictReader(csvfile)
-            for index, row in enumerate(reader):
-                if index == 0:
-                    record_title = self.find_age_title(row)
-                if index == 0 and float(row[record_title]) >= self.record:
-                    return int(row['score'])
-                elif float(row[record_title]) == self.record:
-                    return int(row['score'])
+        if self.record == 0:
+            with open(f'{title}.csv', 'r') as csvfile:
+                reader = csv.DictReader(csvfile)
+                for index, row in enumerate(reader):
+                    if index == 0:
+                        record_title = self.find_age_title(row)
+                    if index == 0 and float(row[record_title]) >= self.record:
+                        return int(row['score'])
+                    elif float(row[record_title]) == self.record:
+                        return int(row['score'])
+        else:
+            return 0
 
     def find_age_title(self, row:dict) -> int:
         for title in row:
